@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人资料页面</title>
+    <link rel="stylesheet" href="css/ziliao.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+
+<body>
+    <div class="header">
+        <h3><a href="zhuye.html"></a>←我的资料</h3>
+    </div>
+    <main>
+        <div class="profile-section">
+            <ul><li>&nbsp;</li></ul>
+            <p>头像&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="images/touxiang.jpg" alt=""></p>
+            <p>昵称<i><input type="text"placeholder="shayla"></i></p>
+            <p>性别<i>女</i></p>
+            <p>二维码</p>
+            <ul><li>&nbsp;</li></ul>
+            <p>生日</p>
+            <p>地区<i>重庆市</i></p>
+            <p>大学<i>重庆邮电大学</i></p>
+            <p>音乐标签</p>
+            <p>乐迷团</p>
+            <p>简介</p>
+            <ul><li>&nbsp;</li></ul>
+        </div>
+    </main>
+    <script>
+        const text = document.querySelector('[type=text]')
+        const item = document.querySelector('i')
+        text.addEventListener('keyup', function (e) {
+                if (e.key === 'Enter') {
+                    if (text.value.trim() != '') {
+                        item.innerHTML = text.value
+                    }
+                }
+            })
+        //上述js仍需改进，其他内容的修改基本同理
+    </script>
+</body>
+
+</html>
